@@ -1,8 +1,8 @@
 from time import sleep
-import work.Template as tl
-from work.Click import *
-import work.jietu as jt
-from work.parte import juese
+import workapp.Template as tl
+from workapp.Click import *
+import workapp.jietu as jt
+from workapp.parte import juese
 
 status = 1
 

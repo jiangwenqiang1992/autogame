@@ -1,5 +1,5 @@
-from work.Click import *
-from work.parte import juese
+from workapp.Click import *
+from workapp.parte import juese
 
 status = 1
 

@@ -1,6 +1,6 @@
 from time import sleep
-from work import Template as tl, jietu as jt
-from work.Click import *
+from workapp import Template as tl, jietu as jt
+from workapp.Click import *
 
 
 class dizhao:

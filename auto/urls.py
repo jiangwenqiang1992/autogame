@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from work import views
+from workapp import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import staticfiles
 
-from work.views import runyibu,clicktest
+from workapp.views import runyibu, clicktest, MpasSetowner, click, attack, attackboos, move, door, run
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,6 +27,13 @@ urlpatterns = [
     path('yibu/', runyibu),
     path('click/', clicktest),
     path('testcheckpoint/', views.testcheckpointView),
+    path('test', MpasSetowner),
+    path('click', click),
+    path('attack', attack),
+    path('attackboos', attackboos),
+    path('move', move),
+    path('door', door),
+    path('run', run),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

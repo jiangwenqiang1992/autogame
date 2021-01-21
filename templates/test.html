@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>create</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div style="margin-left: 100px">
+    <form class="form-horizontal" role="form" action="click" method="post">
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">坐标</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       name="zb"  value="{{zb}}">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" value="1" class="btn btn-success">鼠标单击</button>
+            </div>
+        </div>
+
+    </form>
+    <form class="form-horizontal" role="form" action="attack" method="post">
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" value="1" class="btn btn-success">打怪</button>
+            </div>
+        </div>
+
+    </form>
+        <form class="form-horizontal" role="form" action="attackboos" method="post">
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" value="1" class="btn btn-success">打boos</button>
+            </div>
+        </div>
+
+    </form>
+        </form>
+        <form class="form-horizontal" role="form" action="run" method="post">
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" value="1" class="btn btn-success">运行脚本</button>
+            </div>
+        </div>
+
+    </form>
+    <form class="form-horizontal" role="form" action="move" method="post">
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">坐标</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       name="zb"  value="{{zb}}">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" value="1" class="btn btn-success">移动到</button>
+            </div>
+        </div>
+
+    </form>
+    <form class="form-horizontal" role="form" action="door" method="post">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">方向</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control"
+                       name="zb"  value="{{fx}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" name="submit" value="1" class="btn btn-success">过门</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<label for="response" class="col-sm-2 control-label">response：</label><br/>
+<p id="show_p" style="display:none;">{{response}}</p>
+<pre id="out_pre"></pre>
+<label for="request" class="col-sm-2 control-label">request：</label><br/>
+<p id="show_p2" style="display:none;" >{{request}}</p>
+<pre id="out_pre2"></pre>
+<script type="text/javascript">
+
+                var text = document.getElementById('show_p').innerText; //获取json格式内容
+
+                var result = JSON.stringify(JSON.parse(text), null, 2);//将字符串转换成json对象
+
+                document.getElementById('out_pre').innerText= result ;
+
+                var text2 = document.getElementById('show_p2').innerText; //获取json格式内容
+
+                var result2 = JSON.stringify(JSON.parse(text2), null, 2);//将字符串转换成json对象
+
+                document.getElementById('out_pre2').innerText= result2 ;
+
+
+</script>
+
+
+</body>
+</html>

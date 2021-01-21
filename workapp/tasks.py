@@ -1,7 +1,7 @@
 from tenacity import retry, stop_after_attempt
 
-from work.Click import *
-from work.parte import juese
+from workapp.Click import *
+from workapp.parte import juese
 from .celeryconfig import app
 
 from brush.models import Checkpoint, Actionstep
