@@ -66,8 +66,8 @@ def move(request):
     return HttpResponse(str(rs))
 
 def door(request):
-    fx = request.POST.get('fx')
-    dz.guomen(fx)
+    zb = request.POST.get('zb')
+    dz.guomen(zb)
     print('过门')
     return HttpResponse('过门')
 

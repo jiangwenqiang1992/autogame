@@ -40,8 +40,8 @@ class dizhao:
         print("判断是否开门")
         for i in range(20):
             jt.window_capture(self.dt_name)
-            zb1 = tl.template(self.blue, self.dt_name, 0.3)
-            zb2 = tl.template(self.red, self.dt_name, 0.3)
+            zb1 = tl.template_door(self.blue, self.dt_name, 0.35)
+            zb2 = tl.template_door(self.red, self.dt_name, 0.35)
             if zb1[0]+zb2[0] != 0:
                 print('已开门')
                 return True
@@ -87,14 +87,17 @@ class dizhao:
     def guomen(self, menFangXiang):
         print('执行过门')
         if self.get_door_status():
-            if menFangXiang == '上':
-                clicktwo('w', 1)
-            elif menFangXiang == '右':
-                clicktwo('d', 1)
-            elif menFangXiang == '下':
-                clicktwo('s', 1)
-            elif menFangXiang == '左':
-                clicktwo('a', 1)
+            if int(menFangXiang) == 8:
+                click_down('w', 1)
+            elif int(menFangXiang) == 6:
+                click_down('d', 1)
+            elif int(menFangXiang) == 2:
+                click_down('s', 1)
+            elif int(menFangXiang) == 4:
+                click_down('a', 1)
+            else:
+                print('错误：',menFangXiang)
+                return
         else:
             print('未开门')
             return False
@@ -115,6 +118,14 @@ class dizhao:
             zb = tl.template(self.juese_name, self.dt_name, 0.0000001)
             if zb[0] != 0:
                 print('开图成功')
+                if int(menFangXiang) == 8:
+                    click_up('w', 1)
+                elif int(menFangXiang) == 6:
+                    click_up('d', 1)
+                elif int(menFangXiang) == 2:
+                    click_up('s', 1)
+                elif int(menFangXiang) == 4:
+                    click_up('a', 1)
                 return True
             elif i == 19:
                 print('开图失败')

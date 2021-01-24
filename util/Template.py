@@ -60,6 +60,61 @@ def template(xt_name,dt_name,threshold=0.00001):
         return tl
 
 
+def template_door(xt_name,dt_name,threshold=0.00001):
+
+
+
+    # 模板图片d
+    # xt_name = os.path.join(settings.BASE_DIR, "static/{}".format(xt_name))
+    # dt_name = os.path.join(settings.BASE_DIR, "static/{}".format(dt_name))
+    xt_name = get_static_dir() + xt_name
+    dt_name = get_static_dir() + dt_name
+
+    tpl = cv.imread(xt_name)
+
+    # 目标图片
+    target = cv.imread(dt_name)
+    cv.imshow('template', tpl)
+    cv.imshow('target', target)
+
+    x,y = template('juese.png','DNF.png')
+
+    dest = get_static_dir() + 'jt3.png'
+
+    # 你想对文件的操作
+    a = int(y - 100)  # y start
+    b = int(y + 100)  # y end
+    c = int(x - 150)  # x start
+    d = int(x + 150)  # x end
+    cropImg = target[a:b, c:d]  # 裁剪图像
+    cv2.imwrite(dest, cropImg)  # 写入图像路径
+
+    methods = [cv.TM_SQDIFF_NORMED]
+
+    # 获得模板的高宽
+    th, tw = tpl.shape[:2]
+    for md in methods:
+
+        # 执行模板匹配
+        # target：目标图片
+        # tpl：模板图片
+        # 匹配模式
+        result = cv.matchTemplate(target, tpl, md)
+        # 寻找矩阵(一维数组当作向量,用Mat定义) 中最小值和最大值的位置
+
+        min_val, max_val, min_loc, max_loc = cv.minMaxLoc(result)
+
+        if md in [cv.TM_SQDIFF, cv.TM_SQDIFF_NORMED]:
+            tl = min_loc
+        else:
+            tl = max_loc
+
+        print(min_val)
+        if min_val > threshold :
+            tl = [0, 0]
+        return tl
+
+
 # cv.waitKey(0)
 # cv.destroyAllWindows()
 

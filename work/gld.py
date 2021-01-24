@@ -28,37 +28,37 @@ def order():
     gld = dungeons('格兰迪')
 
     one = brush(1)
-    one.direction = '右'
-    one.destination.append('180,350')
+    one.direction = 6
+    one.destination.append('280,350')
     one.destination.append('780,350')
 
     gld.brushs.append(one)
 
     two = brush(2)
-    two.direction = '右'
-    two.destination.append('180,350')
-    two.destination.append('780,350')
+    two.direction = 6
+    two.destination.append('280,380')
+    two.destination.append('780,420')
 
     gld.brushs.append(two)
 
     three = brush(3)
-    three.direction = '下'
-    three.destination.append('180,350')
-    three.destination.append('550,350')
+    three.direction = 2
+    three.destination.append('280,380')
+    three.destination.append('550,420')
     three.attack_point.append(('450,300', 20))
     three.attack_point.append(('900,300', 20))
 
     gld.brushs.append(three)
 
     four = brush(4)
-    four.direction = '下'
+    four.direction = 2
     four.destination.append('630,250')
     four.destination.append('630,350')
 
     gld.brushs.append(four)
 
     five = brush(5)
-    five.direction = '右'
+    five.direction = 6
     five.destination.append('630,350')
     five.destination.append('780,350')
     five.attack_point.append(('250,300', 20))
@@ -66,7 +66,7 @@ def order():
     gld.brushs.append(five)
 
     six = brush(6)
-    six.direction = '上'
+    six.direction = 8
     six.attack_point.append(('300,200', 20))
     six.attack_point.append(('300,320', 20))
     six.attack_point.append(('830,200', 20))
@@ -79,7 +79,7 @@ def order():
     gld.brushs.append(seven)
 
     for br in gld.brushs:
-        print(br.name + '————————————————————')
+        print(str(br.name) + '————————————————————')
         for i in range(3):
             # 打怪
             dz.daguai()

@@ -211,8 +211,8 @@ def key_up(c=''):
 
 def clicktwo(str='', sleep_time=1):
     MapVirtualKey = windll.user32.MapVirtualKeyA
-    def tmp():
-      for c in str:
+    for c in str:
+          print(c)
           win32api.keybd_event(VK_CODE[c], MapVirtualKey(VK_CODE[c], 0), 0, 0)
           time.sleep(0.05)
           win32api.keybd_event(VK_CODE[c], MapVirtualKey(VK_CODE[c], 0), win32con.KEYEVENTF_KEYUP, 0)
@@ -221,8 +221,21 @@ def clicktwo(str='', sleep_time=1):
           time.sleep(sleep_time)
           win32api.keybd_event(VK_CODE[c], MapVirtualKey(VK_CODE[c], 0), win32con.KEYEVENTF_KEYUP, 0)
 
-    t = threading.Thread(target=tmp, name='clicktwo')
-    t.start()
+
+
+def click_up(str='', sleep_time=1):
+    MapVirtualKey = windll.user32.MapVirtualKeyA
+    win32api.keybd_event(VK_CODE[str], MapVirtualKey(VK_CODE[str], 0), win32con.KEYEVENTF_KEYUP, 0)
+
+def click_down(str='', sleep_time=1):
+    MapVirtualKey = windll.user32.MapVirtualKeyA
+    for c in str:
+        print(c)
+        win32api.keybd_event(VK_CODE[c], MapVirtualKey(VK_CODE[c], 0), 0, 0)
+        time.sleep(0.05)
+        win32api.keybd_event(VK_CODE[c], MapVirtualKey(VK_CODE[c], 0), win32con.KEYEVENTF_KEYUP, 0)
+        time.sleep(0.1)
+        win32api.keybd_event(VK_CODE[c], MapVirtualKey(VK_CODE[c], 0), 0, 0)
 
 
 
