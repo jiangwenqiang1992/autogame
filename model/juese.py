@@ -52,8 +52,7 @@ class dizhao:
     def moveTo(self, zb):
         x, y = str(zb).split(',')
         x = int(x)
-        y = int(y) - 120
-        print('y:{}'.format(y))
+        y = int(y) - 100
 
         if abs(self.getZB()[0] - x) > 50:
             if self.getZB()[0] > x:
@@ -105,6 +104,9 @@ class dizhao:
         for i in range(100):
             jt.window_capture(self.dt_name)
             zb = tl.template(self.juese_name, self.dt_name, 0.0000001)
+            zb2 = tl.template(self.juese_name, self.dt_name, 0.0000001)
+            zb3 = tl.template(self.juese_name, self.dt_name, 0.0000001)
+            zb[0] = zb[0] + zb2[0] + zb3[0]
             if zb[0] == 0:
                 print('已过门')
                 break
@@ -116,6 +118,9 @@ class dizhao:
             time.sleep(1)
             jt.window_capture(self.dt_name)
             zb = tl.template(self.juese_name, self.dt_name, 0.0000001)
+            zb2 = tl.template(self.juese_name, self.dt_name, 0.0000001)
+            zb3 = tl.template(self.juese_name, self.dt_name, 0.0000001)
+            zb[0] = zb[0] + zb2[0] + zb3[0]
             if zb[0] != 0:
                 print('开图成功')
                 if int(menFangXiang) == 8:
