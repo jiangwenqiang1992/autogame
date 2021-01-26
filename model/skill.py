@@ -7,6 +7,7 @@ class skill():
     cr_time = 0
     left = 0
     right = 0
+    key = ''
     def __init__(self,name):
         self.name = name
 

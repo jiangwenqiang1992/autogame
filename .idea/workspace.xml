@@ -2,50 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="391ecd5f-8e32-47f3-80b3-3ce810d17051" name="默认更改列表" comment="2">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/brush.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/dungeons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/juese.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/skill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/Click.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/Template.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/jietu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/jineng.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/path.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/static/DNF.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/static/black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/static/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/static/guai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/static/juese.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/static/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/gld.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workapp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workapp/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workapp/parte/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/auto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/auto.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/key_record.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/key_record1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/listener.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auto/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Click.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/Click.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Template.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/Template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/celeryconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/celeryconfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/jietu.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/jietu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/parte/Work.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/parte/Work.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/parte/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/parte/juese.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/parte/juese.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/parte3.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/parte3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/skill.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/skill.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/jineng.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/jineng.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,16 +44,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\autogame\util" />
+      <recent name="C:\Users\Administrator\PycharmProjects\auto2\model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\autogame" />
       <recent name="C:\Users\Administrator\PycharmProjects\autogame\templates" />
       <recent name="C:\Users\Administrator\PycharmProjects\auto2\util" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\auto2\model" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Python.listener (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,6 +68,69 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="start" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jineng" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Administrator\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/jineng.py" />
+      <option name="PARAMETERS" value="start" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="listener (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Administrator\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/listener.py" />
+      <option name="PARAMETERS" value="start" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="listener" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Administrator\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Administrator\PycharmProjects\autogame\util\listener.py" />
       <option name="PARAMETERS" value="start" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,10 +185,16 @@
     </configuration>
     <list>
       <item itemvalue="Python.manage" />
+      <item itemvalue="Python.jineng" />
+      <item itemvalue="Python.listener" />
+      <item itemvalue="Python.listener (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.manage" />
+        <item itemvalue="Python.listener (1)" />
+        <item itemvalue="Python.listener" />
+        <item itemvalue="Python.jineng" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +210,14 @@
       <updated>1579088547542</updated>
       <workItem from="1579088570513" duration="5073000" />
     </task>
+    <task id="LOCAL-00001" summary="2">
+      <created>1611570670685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611570670685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -184,15 +226,23 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="825" y="382" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611214274900">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="825" y="382" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1611214274900" />
-    <state x="774" y="334" width="706" height="806" key="CommitChangelistDialog2" timestamp="1610793025422">
+    <state x="1253" y="523" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611631575959">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="774" y="334" width="706" height="806" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1610793025422" />
+    <state x="1253" y="523" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1611631575959" />
+    <state x="774" y="334" width="706" height="806" key="CommitChangelistDialog2" timestamp="1611570670139">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="774" y="334" width="706" height="806" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1611570670139" />
     <state x="1151" y="482" key="FileChooserDialogImpl" timestamp="1610706524986">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -201,30 +251,54 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1129" y="674" key="Github.CreateGistDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1610706478713" />
-    <state width="1892" height="327" key="GridCell.Tab.0.bottom" timestamp="1611216211961">
+    <state width="1892" height="530" key="GridCell.Tab.0.bottom" timestamp="1611652106876">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1892" height="327" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1611216211961" />
-    <state width="1892" height="327" key="GridCell.Tab.0.center" timestamp="1611216211961">
+    <state width="1892" height="530" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1611652106876" />
+    <state width="1892" height="530" key="GridCell.Tab.0.center" timestamp="1611652106876">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1892" height="327" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1611216211961" />
-    <state width="1892" height="327" key="GridCell.Tab.0.left" timestamp="1611216211961">
+    <state width="1892" height="530" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1611652106876" />
+    <state width="1892" height="530" key="GridCell.Tab.0.left" timestamp="1611652106876">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1892" height="327" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1611216211961" />
-    <state width="1892" height="327" key="GridCell.Tab.0.right" timestamp="1611216211961">
+    <state width="1892" height="530" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1611652106876" />
+    <state width="1892" height="530" key="GridCell.Tab.0.right" timestamp="1611652106876">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1892" height="327" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1611216211961" />
-    <state x="874" y="369" key="SettingsEditor" timestamp="1610700966751">
+    <state width="1892" height="530" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1611652106876" />
+    <state width="1892" height="402" key="GridCell.Tab.1.bottom" timestamp="1611651799020">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="874" y="369" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1610700966751" />
+    <state width="1892" height="402" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1611651799020" />
+    <state width="1892" height="402" key="GridCell.Tab.1.center" timestamp="1611651799020">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1892" height="402" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1611651799020" />
+    <state width="1892" height="402" key="GridCell.Tab.1.left" timestamp="1611651799019">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1892" height="402" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1611651799019" />
+    <state width="1892" height="402" key="GridCell.Tab.1.right" timestamp="1611651799020">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1892" height="402" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1611651799020" />
+    <state x="874" y="369" key="SettingsEditor" timestamp="1611631526097">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="874" y="369" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1611631526097" />
+    <state x="1129" y="450" key="Vcs.Push.Dialog.v2" timestamp="1611570679044">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1129" y="450" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1611570679044" />
     <state x="991" y="450" width="759" height="548" key="find.popup" timestamp="1610701044670">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="991" y="450" width="759" height="548" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1610701044670" />
+    <state x="1216" y="516" key="git4idea.merge.GitPullDialog" timestamp="1611546010753">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1216" y="516" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1611546010753" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

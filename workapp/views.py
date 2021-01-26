@@ -1,9 +1,11 @@
 import os
+import threading
 
 from django.http import HttpResponse
 from django.shortcuts import render
 
 from model.juese import dizhao
+from util.listener import start_listen
 from work.gld import order
 from .tasks import yibu, runworktask,clicktesttask,test1,testcheckpoint
 
@@ -74,7 +76,5 @@ def door(request):
 def run(request):
     order()
     return HttpResponse('run')
-
-
 
 
