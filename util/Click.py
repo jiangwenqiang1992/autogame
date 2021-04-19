@@ -178,13 +178,29 @@ def mouse_dclick(x=None,y=None):
   win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
   win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
   win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
+
+def mouse_left_click():
+
+  MapVirtualKey = windll.user32.MapVirtualKeyA
+  win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, MapVirtualKey(win32con.MOUSEEVENTF_LEFTDOWN, 0), 0, 0, 0)
+  time.sleep(0.05)
+  win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, MapVirtualKey(win32con.MOUSEEVENTF_LEFTDOWN, 0), 0, 0, 0)
+
+def mouse_right_click():
+
+  MapVirtualKey = windll.user32.MapVirtualKeyA
+  win32api.mouse_event(win32con.MOUSEEVENTF_RIGHTDOWN, MapVirtualKey(win32con.MOUSEEVENTF_LEFTDOWN, 0), 0, 0, 0)
+  time.sleep(0.05)
+  win32api.mouse_event(win32con.MOUSEEVENTF_RIGHTUP, MapVirtualKey(win32con.MOUSEEVENTF_LEFTDOWN, 0), 0, 0, 0)
+
 def mouse_move(x,y):
   windll.user32.SetCursorPos(x, y)
-def key_input(str=''):
+
+def key_input(str='', sleep=0.05):
   MapVirtualKey = windll.user32.MapVirtualKeyA
   for c in str:
     win32api.keybd_event(VK_CODE[c],MapVirtualKey(VK_CODE[c], 0),0,0)
-    time.sleep(0.05)
+    time.sleep(sleep)
     win32api.keybd_event(VK_CODE[c],MapVirtualKey(VK_CODE[c], 0),win32con.KEYEVENTF_KEYUP,0)
     time.sleep(0.01)
 

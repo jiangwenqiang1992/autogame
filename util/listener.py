@@ -47,9 +47,9 @@ def start_listen():
     with Listener(on_press=on_press, on_release=on_release) as listener:
         listener.join()
 
-
-t = threading.Thread(target=start_listen, name='LoopThread')
-t.start()
+#
+# t = threading.Thread(target=start_listen, name='LoopThread')
+# t.start()
 
 t = threading.Thread(target=attack, name='LoopThread_attack')
 t.start()
