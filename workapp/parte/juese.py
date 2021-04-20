@@ -7,11 +7,11 @@ class dizhao:
     # juese_name = '../image/juese.png'
     # dt_name = '../DNF.jpg'
     # xt_name = '../image/guai.png'
-    # liangmen_name = '../image/kaimen.png'
+    # liangmen_name = '../image/blue.png'
     juese_name = 'juese.png'
     dt_name = 'DNF.jpg'
     xt_name = 'guai.png'
-    liangmen_name = 'kaimen.png'
+    liangmen_name = 'blue.png'
 
     def __init__(self):
         self.getZB()

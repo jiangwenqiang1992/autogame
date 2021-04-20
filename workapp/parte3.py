@@ -12,7 +12,7 @@ menList = {1: (950, 350), 2: (670, 450), 3: (950, 350), 4: (950, 300)}
 menFangXiangList = {1: 2, 2: 3, 3: 2, 4: 2}
 xt_name = '../image/guai/guai.png'
 dt_name = '../DNF.jpg'
-liangmen_name = '../kaimen.png'
+liangmen_name = '../blue.png'
 juese_name = '../image/juese/juese.png'
 
 # 动作 1 移动到  2 移动 3 打怪 4 点击

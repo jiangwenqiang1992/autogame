@@ -26,25 +26,25 @@ def reverse(br: brush):
 
 def order():
     gld = dungeons('格兰迪')
-
-    one = brush(1)
-    one.direction = 6
-    one.destination.append('280,350')
-    one.destination.append('780,350')
-
-    gld.brushs.append(one)
+    #
+    # one = brush(1)
+    # one.direction = 6
+    # one.destination.append('280,350')
+    # one.destination.append('750,350')
+    #
+    # gld.brushs.append(one)
 
     two = brush(2)
     two.direction = 6
-    two.destination.append('280,380')
-    two.destination.append('780,420')
+    two.destination.append('280,400')
+    two.destination.append('750,400')
 
     gld.brushs.append(two)
 
     three = brush(3)
     three.direction = 2
-    three.destination.append('280,380')
-    three.destination.append('550,420')
+    three.destination.append('280,350')
+    three.destination.append('550,400')
     three.attack_point.append(('450,300', 20))
     three.attack_point.append(('900,300', 20))
 
