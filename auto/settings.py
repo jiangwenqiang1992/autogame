@@ -96,10 +96,10 @@ WSGI_APPLICATION = 'auto.wsgi.application'
 DATABASES = {
     'default':     {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'auto',
-        'USER': 'root',
-        'PASSWORD': 'txy431026.',
-        'HOST': '119.29.129.239',
+        'NAME': 'tmall_springboot',
+        'USER': 'charle',
+        'PASSWORD': 'rds431026+',
+        'HOST': 'rm-wz983f37i3bj5yphaio.mysql.rds.aliyuncs.com',
         'PORT': '3306',
     }
 }

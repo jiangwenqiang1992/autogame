@@ -12,27 +12,20 @@ zf.key = 'ddz'
 
 ice = skill('寒冰')
 ice.max_time = 10
-<<<<<<< HEAD
 ice.left_count = 10
 ice.right_count = 5
-ice.key = 'wwz'
 ice.left_sleep = 0.2
 ice.right_sleep = 0.6
-=======
 ice.left_count = 7
 ice.right_count = 3
 ice.key = 'sdz'
->>>>>>> d842d1136b6a132510c26cf84b6a4f18bbb63ca5
 
 fire = skill('火焰')
 fire.max_time = 10
 fire.left_count = 10
-<<<<<<< HEAD
 fire.right_count = 5
-fire.key = 'wwaz'
 fire.left_sleep = 0.2
 fire.right_sleep = 0.8
-=======
 fire.right_count = 9
 fire.key = 'dz'
 
@@ -65,7 +58,6 @@ xk.max_time = 46
 xk.left_count = 1
 xk.right_count = 0
 xk.key = 'ssz'
->>>>>>> d842d1136b6a132510c26cf84b6a4f18bbb63ca5
 
 skills = []
 skills.append(zf)

@@ -1,7 +1,7 @@
 from tenacity import retry, stop_after_attempt
 
 from workapp.Click import *
-from workapp.parte import juese
+from workapp.parte import role
 from .celeryconfig import app
 
 from brush.models import Checkpoint, Actionstep
@@ -11,21 +11,21 @@ from brush.models import Checkpoint, Actionstep
 def yibu():
     print('start yibu')
     # time.sleep(10)
-    dz = juese.dizhao()
+    dz = role.dizhao()
     dz.getZB()
     print('end yibu')
 
 
 def test1():
     '''幽暗密林剧情1'''
-    dz = juese.dizhao()
+    dz = role.dizhao()
     dz.moveTo('250,300')
     dz.moveTo('780,400')
     dz.guomen('右')
 
 
 def runAction(ac):
-    dz = juese.dizhao()
+    dz = role.dizhao()
     type = int(ac.type)
     time.sleep(1)
     if type == 1:
@@ -57,7 +57,7 @@ def runAction(ac):
 
 
 def runActions(actions, ck):
-    dz = juese.dizhao()
+    dz = role.dizhao()
     count = 5
     while count > 0:
         print('正序执行')

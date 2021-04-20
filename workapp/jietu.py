@@ -29,3 +29,7 @@ def window_capture(filename, flag=0):
 
     return width, height
 
+
+def screenshot():
+    dt_name = 'DNF.jpg'
+    window_capture('./static/' + dt_name)

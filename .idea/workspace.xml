@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="391ecd5f-8e32-47f3-80b3-3ce810d17051" name="默认更改列表" comment="2">
-      <change afterPath="$PROJECT_DIR$/util/static/jt3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workapp/parte/player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workapp/parte/role.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workapp/parte/room.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/juese.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/juese.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/Click.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/Click.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auto/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/auto/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/jineng.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/jineng.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/listener.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/listener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/static/DNF.png" beforeDir="false" afterPath="$PROJECT_DIR$/util/static/DNF.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/static/blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/util/static/blue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/gld.py" beforeDir="false" afterPath="$PROJECT_DIR$/work/gld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workapp/parte/juese.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/parte/juese.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workapp/parte3.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/parte3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/gld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workapp/Click.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/Click.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workapp/jietu.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/jietu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workapp/parte/Work.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workapp/parte/juese.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workapp/parte3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workapp/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/workapp/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618882056129</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2">
+      <created>1618882308511</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618882308511</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -279,10 +290,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1253" y="523" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1611631575959" />
-    <state x="774" y="334" width="706" height="806" key="CommitChangelistDialog2" timestamp="1618882055306">
+    <state x="1033" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618911919934">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="774" y="334" width="706" height="806" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1618882055306" />
+    <state x="1033" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1618911919934" />
+    <state x="774" y="334" width="706" height="806" key="CommitChangelistDialog2" timestamp="1618882307957">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="774" y="334" width="706" height="806" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1618882307957" />
     <state x="1151" y="482" key="FileChooserDialogImpl" timestamp="1610706524986">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -323,10 +338,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1892" height="402" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1611651799020" />
-    <state x="874" y="369" key="SettingsEditor" timestamp="1618882266526">
+    <state x="874" y="369" key="SettingsEditor" timestamp="1618882494651">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="874" y="369" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1618882266526" />
+    <state x="874" y="369" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1618882494651" />
     <state x="1129" y="450" key="Vcs.Push.Dialog.v2" timestamp="1618882011934">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -335,18 +350,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1229" y="542" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1618824767753" />
-    <state x="991" y="450" width="759" height="548" key="find.popup" timestamp="1610701044670">
+    <state x="991" y="450" width="759" height="548" key="find.popup" timestamp="1618885826784">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="991" y="450" width="759" height="548" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1610701044670" />
-    <state x="1216" y="516" key="git4idea.merge.GitPullDialog" timestamp="1618882274223">
+    <state x="991" y="450" width="759" height="548" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1618885826784" />
+    <state x="1216" y="516" key="git4idea.merge.GitPullDialog" timestamp="1618882502964">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1216" y="516" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1618882274223" />
-    <state x="1257" y="650" key="git4idea.ui.GitStashDialog" timestamp="1618882073404">
+    <state x="1216" y="516" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1618882502964" />
+    <state x="1257" y="650" key="git4idea.ui.GitStashDialog" timestamp="1618882329972">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1257" y="650" key="git4idea.ui.GitStashDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1618882073404" />
+    <state x="1257" y="650" key="git4idea.ui.GitStashDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1618882329972" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

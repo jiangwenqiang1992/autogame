@@ -5,7 +5,7 @@ from django.test import TestCase
 import requests
 
 #print(requests.get('http://127.0.0.1:8000/click'))
-from workapp.parte import juese
+from workapp.parte import role
 
 
 
