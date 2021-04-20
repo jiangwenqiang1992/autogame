@@ -8,12 +8,16 @@ ice.max_time = 10
 ice.left_count = 10
 ice.right_count = 5
 ice.key = 'wwz'
+ice.left_sleep = 0.2
+ice.right_sleep = 0.6
 
 fire = skill('火焰')
 fire.max_time = 10
 fire.left_count = 10
 fire.right_count = 5
 fire.key = 'wwaz'
+fire.left_sleep = 0.2
+fire.right_sleep = 0.8
 
 skills = []
 skills.append(ice)
