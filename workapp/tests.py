@@ -1,11 +1,10 @@
-from django.test import TestCase
-
-# Create your tests here.
-
-import requests
-
-#print(requests.get('http://127.0.0.1:8000/click'))
-from workapp.parte import role
 
 
+def get(i):
+    if i==1:
+        return False
+    else:
+        return 2
+
+print(get(2))
 

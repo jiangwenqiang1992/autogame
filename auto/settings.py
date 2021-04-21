@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'auto.wsgi.application'
 DATABASES = {
     'default':     {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tmall_springboot',
+        'NAME': 'auto',
         'USER': 'charle',
         'PASSWORD': 'rds431026+',
         'HOST': 'rm-wz983f37i3bj5yphaio.mysql.rds.aliyuncs.com',
@@ -146,8 +146,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(os.path.dirname(__file__),'static')
 
 STATICFILES_DIRS = (
-    ('css',os.path.join(STATIC_ROOT,'css').replace('\\','/') ),
-    ('js',os.path.join(STATIC_ROOT,'js').replace('\\','/') ),
+    ('assets',os.path.join(STATIC_ROOT,'assets').replace('\\','/') ),
+    ('Bootstrap',os.path.join(STATIC_ROOT,'Bootstrap').replace('\\','/') ),
     ('images',os.path.join(STATIC_ROOT,'images').replace('\\','/') ),
     ('upload',os.path.join(STATIC_ROOT,'upload').replace('\\','/') ),
 )

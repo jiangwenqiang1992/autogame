@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body id="body">
+<div class="breadcrumbs" id="breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <i class="icon-home home-icon"></i>
+            <a href="/viewpage.html">页面管理</a>
+        </li>
+    </ul><!-- .breadcrumb -->
+</div>
+
+
+<div class="page-content">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- PAGE CONTENT BEGINS -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.col -->
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="table-responsive">
+                <table id="sample-table-1" class="table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th class="center">
+                            <label>
+                                <input type="checkbox" class="ace"/>
+                                <span class="lbl"></span>
+                            </label>
+                        </th>
+                        <th>id</th>
+                        <th>name</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr th:each="page,stat:${pages}">
+                        <td class="center">
+                            <label>
+                                <input type="checkbox" class="ace"/>
+                                <span class="lbl"></span>
+                            </label>
+                        </td>
+
+                        <td th:text="${page.id}"></td>
+                        <td><a th:href="@{'/viewPageDetail.html?id=' + ${page.id}}"
+                               th:text="${page.name}"></a></td>
+                        <td>
+                            <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                                <button class="btn btn-xs btn-success success" th:value="${page.id}">
+                                    <i class="icon-ok bigger-120"></i>
+                                </button>
+
+                                <button class="btn btn-xs btn-info edit" th:value="${page.id}">
+                                    <i class="icon-edit bigger-120"></i>
+                                </button>
+
+                                <button class="btn btn-xs btn-danger delete " th:value="${page.id}">
+                                    <i class="icon-trash bigger-120"></i>
+                                </button>
+
+<!--                                <button class="btn btn-xs btn-warning">-->
+<!--                                    <i class="icon-flag bigger-120"></i>-->
+<!--                                </button>-->
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div><!-- /.table-responsive -->
+        </div><!-- /span -->
+
+    </div><!-- /row -->
+
+</div><!-- /.page-content -->
+<div th:replace="common :: #js"></div>
+<script>
+    $(function(){
+
+        $(".edit").click(function() {
+            $(this).parent().parent().siblings("td:eq(2)").each(function() {  // 获取当前行的第4列单元格
+                obj_text = $(this).find("input:text");    // 判断单元格下是否有文本框
+                if(!obj_text.length)   // 如果没有文本框，则添加文本框使之可以编辑
+                    $(this).html("<input type='text' value='"+$(this).text()+"'>");
+            });
+        });
+        $(".success").click(function() {
+            var row = $(this).parent().parent();
+            var id = row.siblings("td:eq(1)").text();
+            var name = "";
+            row.siblings("td:eq(2)").each(function() {  // 获取当前行的第2列单元格
+                obj_text = $(this).find("input:text");    // 判断单元格下是否有文本框
+                if(obj_text.length){   // 如果已经存在文本框，则将其显示为文本框修改的值
+                     $(this).html(obj_text.val());
+                     name=obj_text.val();
+                     $.post('/updatePage',{id:id,name:name},function(data,status){
+                        toast(data);
+                    });
+                }
+            });
+        });
+        $(".delete").click(function(){
+            toast($(this).val());
+            $.post('/deletePage',{id:$(this).val()},(data) => {
+                toast(data);
+                sleep(1000).then(() => {
+                    f5();
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>

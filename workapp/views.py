@@ -77,4 +77,8 @@ def run(request):
     order()
     return HttpResponse('run')
 
+def runStep(request):
+    print(request.POST.get('id'))
+    return HttpResponse('runStep')
+
 

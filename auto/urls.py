@@ -19,7 +19,7 @@ from workapp import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import staticfiles
 
-from workapp.views import runyibu, clicktest, MpasSetowner, click, attack, attackboos, move, door, run
+from workapp.views import runyibu, clicktest, MpasSetowner, click, attack, attackboos, move, door, run, runStep
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,6 +34,8 @@ urlpatterns = [
     path('move', move),
     path('door', door),
     path('run', run),
+    path('runStep', runStep),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()
