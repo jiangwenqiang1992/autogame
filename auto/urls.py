@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from workapp import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from django.contrib import staticfiles
 
 from workapp.views import runyibu, clicktest, MpasSetowner, click, attack, attackboos, move, door, run, runStep
 

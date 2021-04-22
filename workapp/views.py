@@ -78,7 +78,9 @@ def run(request):
     return HttpResponse('run')
 
 def runStep(request):
-    print(request.POST.get('id'))
+    print(request.POST.get('num'))
+    print(request.POST.get('content'))
+    print(request.POST.get('type'))
     return HttpResponse('runStep')
 
 

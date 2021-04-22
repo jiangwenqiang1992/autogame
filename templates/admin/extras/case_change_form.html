@@ -8,8 +8,30 @@
 
 <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
 
+<link rel="stylesheet" href="{% static '/assets/css/toast.css' %}"/>
+
 <script type="text/javascript" src="{% static '/Bootstrap/jquery-1.9.1.min.js' %}"></script>
 <script>
+
+    function toast(msg) {
+        if ($("div").is("#toastMessage")) {
+            $("#toastMessage").remove();
+        }
+
+        var msgDiv = '<div id="toastMessage" class="toast-message">' +
+            '<span>' + msg + '</span>' +
+            '</div>';
+        $("#content").append(msgDiv);
+
+        var toastMessage = $("#toastMessage");
+        var top = 500 + "px";
+        toastMessage.css("top", top);
+
+        setTimeout(function() {
+            $("#toastMessage").remove();
+        }, 1500);
+    }
+
     django.jQuery(function() {            
         django.jQuery('input[id$="DELETE"]').after("<input class='test' type='button' value='执行'></input>");
         var id = django.jQuery('#id_actionstep_checkpoint-0-Checkpoint').val();
@@ -24,10 +46,9 @@
             var num = $(this).parent().prev().children().val();
             var content = $(this).parent().prev().prev().children().val();
             var type = $(this).parent().prev().prev().prev().children().val();
-            console.log(num);
-            console.log(content);
-            console.log(type);
-            $.post('/runStep',{id:num,content:content,type:type});
+            $.post('/runStep',{num:num,content:content,type:type},function(data,status){
+                toast(data);
+            });
         });
 
     });

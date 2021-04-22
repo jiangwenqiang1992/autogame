@@ -99,7 +99,7 @@ DATABASES = {
         'NAME': 'auto',
         'USER': 'charle',
         'PASSWORD': 'rds431026+',
-        'HOST': 'rm-wz983f37i3bj5yphaio.mysql.rds.aliyuncs.com',
+        'HOST': '8.129.245.55',
         'PORT': '3306',
     }
 }
