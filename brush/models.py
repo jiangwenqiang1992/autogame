@@ -22,7 +22,7 @@ class Actionstep(models.Model):
     Checkpoint = models.ForeignKey(Checkpoint, related_name='actionstep_checkpoint', on_delete=models.CASCADE)  # 关联关卡
     actionstep = models.DecimalField('操作步骤', max_digits=10, decimal_places=2)  # 操作步骤
     type = models.PositiveSmallIntegerField(
-        choices=[(1, '移动到'), (2, '双击按键'), (3, '打怪'), (4, '鼠标点击'), (5, '键盘按键'), (6, '延迟'),(7,'键盘长按')], verbose_name='操作类型',
+        choices=[(1, '移动到'), (2, '双击按键'), (3, '打怪'), (4, '鼠标点击'), (5, '键盘按键'), (6, '延迟'),(7,'键盘长按'),(8,'过门')], verbose_name='操作类型',
         default=1)  # 操作类型
     content = models.CharField('操作内容', max_length=200)  # 操作内容
     actionNum = models.PositiveSmallIntegerField(default=1, verbose_name='操作次数')

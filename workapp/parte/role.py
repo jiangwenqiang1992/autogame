@@ -34,6 +34,10 @@ class dizhao:
     def move_stop(self):
         key_up(self.key)
 
+    def directionMove(self,direction):
+        key_down(direction)
+        key_up(direction)
+
 
     def attack(self, zb):
         mouse_click(str(zb[0] + 25) + ',' + str(zb[1] + 25))

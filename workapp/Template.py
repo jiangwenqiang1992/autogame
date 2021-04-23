@@ -3,14 +3,14 @@ import cv2
 from matplotlib import pyplot as plt
 
 from util.path import get_static_dir
-
-
+import os
+from auto import settings
 def template(xt_name, dt_name):
     # 模板图片d
-    # xt_name = os.path.join(settings.BASE_DIR, "static/{}".format(xt_name))
-    # dt_name = os.path.join(settings.BASE_DIR, "static/{}".format(dt_name))
-    xt_name = get_static_dir() + xt_name
-    dt_name = get_static_dir() + dt_name
+    xt_name = os.path.join(settings.BASE_DIR, "static/{}".format(xt_name))
+    dt_name = os.path.join(settings.BASE_DIR, "static/{}".format(dt_name))
+    # xt_name = get_static_dir() + xt_name
+    # dt_name = get_static_dir() + dt_name
 
     tpl = cv.imread(xt_name)
 
@@ -19,13 +19,13 @@ def template(xt_name, dt_name):
     cv.imshow('template', tpl)
     cv.imshow('target', target)
 
-    method = [cv.TM_SQDIFF_NORMED]
+    method = cv.TM_SQDIFF_NORMED
 
     # 执行模板匹配
     # target：目标图片
     # tpl：模板图片
     # 匹配模式
-    result = cv.matchTemplate(target, tpl, md)
+    result = cv.matchTemplate(target, tpl, method)
     # 寻找矩阵(一维数组当作向量,用Mat定义) 中最小值和最大值的位置
 
     min_val, max_val, min_loc, max_loc = cv.minMaxLoc(result)
@@ -36,7 +36,8 @@ def template(xt_name, dt_name):
 
 
 def template_door(xt_name, dt_name):
-    dt_name = get_static_dir() + dt_name
+    dt_name = os.path.join(settings.BASE_DIR, "static/{}".format(dt_name))
+
     img = cv.imread(dt_name)
 
     a = 0  # y start
@@ -46,8 +47,9 @@ def template_door(xt_name, dt_name):
     cropImg = img[a:b, c:d]  # 裁剪图像
     cv.imshow('cropImg', cropImg)
 
-    dest = get_static_dir() + 'jt3.png'
-    cv2.imwrite(dest, cropImg)  # 写入图像路径
+    dt_name = os.path.join(settings.BASE_DIR, "static/{}".format('jt3.png'))
+
+    cv2.imwrite(dt_name, cropImg)  # 写入图像路径
     return template(xt_name, "jt3.png")
 
 

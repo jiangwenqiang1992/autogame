@@ -54,6 +54,10 @@ def runAction(ac, er):
         key_down(ac.content)
         time.sleep(int(ac.actionNum))
         key_up(ac.content)
+    elif type==8:
+        print("过门，方向{}".format(ac.content))
+        if er.passDoor():
+            print("已开门")
 
 
 def runActions(actions, ck):
@@ -71,16 +75,16 @@ def runActions(actions, ck):
         if '任务' in ck.checkpointname:
             return 1
 
-        if er.passDoor():
-            return True
-        else:
-            print('逆序执行')
-            actionsnx = actions.reverse()
-            for ac in actionsnx:
-                print(ac.Checkpoint.checkpointname, ac.actionstep)
-                print(ac.type)
-                runAction(ac,er)
-            print('逆序执行结束')
+
+        #
+        # else:
+        #     print('逆序执行')
+        #     actionsnx = actions.reverse()
+        #     for ac in actionsnx:
+        #         print(ac.Checkpoint.checkpointname, ac.actionstep)
+        #         print(ac.type)
+        #         runAction(ac,er)
+        #     print('逆序执行结束')
 
         if ck.checkpointname == 'BOSS关':
             print('打完BOSS')

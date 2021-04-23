@@ -49,4 +49,5 @@ class player:
 
     def passDoor(self):
         if self.current_room.getDoorStatus():
-            self.current_role.move_dowm()
+            self.current_role.directionMove(direction)
+
